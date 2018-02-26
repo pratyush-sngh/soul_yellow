@@ -7,7 +7,7 @@ use Mix.Config
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
 config :soul_yellow, SoulYellow.Endpoint,
-  http: [port: 4000],
+  http: [port: 8080],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -37,6 +37,7 @@ config :phoenix, :stacktrace_depth, 20
 config :soul_yellow, SoulYellow.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "soul_yellow",
+  password: "passSoul",
   database: "soul_yellow_dev",
   hostname: "localhost",
   pool_size: 10
